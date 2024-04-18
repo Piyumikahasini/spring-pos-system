@@ -4,7 +4,7 @@ function loadAllOrderDetail() {
     $("#tblOrderDetails").empty();
     $("#tblOrderDetails").empty();
     $.ajax({
-        url: baseUrl + "orders/LoadOrderDetails", method: "GET", dataType: "json", success: function (res) {
+        url:  "http://localhost:8080/app/orders/LoadOrderDetails", method: "GET", dataType: "json", success: function (res) {
             console.log(res);
 
             for (let i of res.data) {
